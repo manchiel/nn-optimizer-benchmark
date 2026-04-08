@@ -129,7 +129,7 @@ LM and LM-Broyden converge to lower loss in fewer epochs than Adam and GD on the
 
 ![Heatmap accuracy](results/figures/heatmap_loss.png)
 
-**LM dominates accuracy on wider networks ([1,16,1], [1,32,1], [1,64,1]) 
+LM dominates accuracy on wider networks ([1,16,1], [1,32,1], [1,64,1]) 
 across all dataset sizes.** On the smallest network ([1,8,1]), LM-Broyden 
 surprisingly outperforms LM-exact in most configurations. One exception: 
 L-BFGS wins on [1,8,1] with 500 samples.
@@ -139,7 +139,7 @@ L-BFGS wins on [1,8,1] with 500 samples.
 
 ![Heatmap speed](results/figures/heatmap_time.png)
 
-**GD and L-BFGS dominate runtime.** GD because of its trivial per-step cost, L-BFGS because of scipy's highly optimized C implementation. 
+GD and L-BFGS dominate runtime. GD because of its trivial per-step cost, L-BFGS because of scipy's highly optimized C implementation. 
 
 ### Convergence speed — epochs to reach loss < ε
 

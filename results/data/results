@@ -1,0 +1,190 @@
+GD           | loss: 0.176716 | time: 0.034
+Adam         | loss: 0.013173 | time: 0.024
+LM           | loss: 0.010695 | time: 0.149
+LMB          | loss: 0.009526 | time: 0.121
+LBFGS        | loss: 0.010527 | time: 0.084
+
+====== Dataset size: 50 samples ==========
+--- Architecture: [1, 4, 1] --------------
+GD           | loss: 0.147323 | time: 0.047
+Adam         | loss: 0.010646 | time: 0.053
+LM           | loss: 0.009893 | time: 0.236
+LMB          | loss: 0.009025 | time: 0.164
+LBFGS        | loss: 0.010562 | time: 0.033
+-------------------------------------------
+--- Architecture: [1, 8, 1] --------------
+GD           | loss: 0.135693 | time: 0.051
+Adam         | loss: 0.010475 | time: 0.056
+LM           | loss: 0.007853 | time: 0.397
+LMB          | loss: 0.007669 | time: 0.260
+LBFGS        | loss: 0.010527 | time: 0.085
+-------------------------------------------
+--- Architecture: [1, 16, 1] --------------
+GD           | loss: 0.179786 | time: 0.064
+Adam         | loss: 0.010342 | time: 0.069
+LM           | loss: 0.002060 | time: 0.844
+LMB          | loss: 0.004262 | time: 0.565
+LBFGS        | loss: 0.010172 | time: 0.210
+-------------------------------------------
+--- Architecture: [1, 32, 1] --------------
+GD           | loss: 0.198457 | time: 0.100
+Adam         | loss: 0.011795 | time: 0.115
+LM           | loss: 0.002221 | time: 4.607
+LMB          | loss: 0.002478 | time: 2.383
+LBFGS        | loss: 0.010293 | time: 0.662
+-------------------------------------------
+--- Architecture: [1, 64, 1] --------------
+GD           | loss: 0.219292 | time: 0.188
+Adam         | loss: 0.010793 | time: 0.192
+LM           | loss: 0.002500 | time: 29.026
+LMB          | loss: 0.003757 | time: 11.191
+LBFGS        | loss: 0.009470 | time: 0.438
+-------------------------------------------
+
+====== Dataset size: 100 samples ==========
+--- Architecture: [1, 4, 1] --------------
+GD           | loss: 0.123586 | time: 0.088
+Adam         | loss: 0.008840 | time: 0.102
+LM           | loss: 0.008271 | time: 0.367
+LMB          | loss: 0.008351 | time: 0.279
+LBFGS        | loss: 0.008407 | time: 0.100
+-------------------------------------------
+--- Architecture: [1, 8, 1] --------------
+GD           | loss: 0.115397 | time: 0.087
+Adam         | loss: 0.008455 | time: 0.105
+LM           | loss: 0.008391 | time: 0.662
+LMB          | loss: 0.008390 | time: 0.410
+LBFGS        | loss: 0.008409 | time: 0.127
+-------------------------------------------
+--- Architecture: [1, 16, 1] --------------
+GD           | loss: 0.158110 | time: 0.108
+Adam         | loss: 0.008459 | time: 0.112
+LM           | loss: 0.006078 | time: 1.581
+LMB          | loss: 0.006431 | time: 1.581
+LBFGS        | loss: 0.008402 | time: 0.222
+-------------------------------------------
+--- Architecture: [1, 32, 1] --------------
+GD           | loss: 0.177028 | time: 0.201
+Adam         | loss: 0.008716 | time: 0.187
+LM           | loss: 0.004488 | time: 4.885
+LMB          | loss: 0.005783 | time: 3.581
+LBFGS        | loss: 0.008400 | time: 0.324
+-------------------------------------------
+--- Architecture: [1, 64, 1] --------------
+GD           | loss: 0.196646 | time: 0.342
+Adam         | loss: 0.008622 | time: 0.366
+LM           | loss: 0.006020 | time: 40.352
+LMB          | loss: 0.006138 | time: 27.104
+LBFGS        | loss: 0.008406 | time: 0.279
+-------------------------------------------
+
+====== Dataset size: 500 samples ==========
+--- Architecture: [1, 4, 1] --------------
+GD           | loss: 0.118222 | time: 0.146
+Adam         | loss: 0.010220 | time: 0.148
+LM           | loss: 0.009504 | time: 1.025
+LMB          | loss: 0.009545 | time: 0.870
+LBFGS        | loss: 0.009731 | time: 0.065
+-------------------------------------------
+--- Architecture: [1, 8, 1] --------------
+GD           | loss: 0.110547 | time: 0.247
+Adam         | loss: 0.009708 | time: 0.230
+LM           | loss: 0.009757 | time: 1.774
+LMB          | loss: 0.009756 | time: 1.354
+LBFGS        | loss: 0.009691 | time: 0.273
+-------------------------------------------
+--- Architecture: [1, 16, 1] --------------
+GD           | loss: 0.153378 | time: 0.358
+Adam         | loss: 0.009728 | time: 0.405
+LM           | loss: 0.009167 | time: 7.222
+LMB          | loss: 0.009180 | time: 3.074
+LBFGS        | loss: 0.009572 | time: 0.339
+-------------------------------------------
+--- Architecture: [1, 32, 1] --------------
+GD           | loss: 0.172168 | time: 0.506
+Adam         | loss: 0.011245 | time: 0.489
+LM           | loss: 0.009079 | time: 17.428
+LMB          | loss: 0.009081 | time: 8.449
+LBFGS        | loss: 0.009722 | time: 0.455
+-------------------------------------------
+--- Architecture: [1, 64, 1] --------------
+GD           | loss: 0.190964 | time: 0.881
+Adam         | loss: 0.010201 | time: 0.884
+LM           | loss: 0.009035 | time: 55.422
+LMB          | loss: 0.009053 | time: 34.781
+LBFGS        | loss: 0.009702 | time: 1.187
+-------------------------------------------
+
+====== Dataset size: 1000 samples ==========
+--- Architecture: [1, 4, 1] --------------
+GD           | loss: 0.117527 | time: 0.188
+Adam         | loss: 0.010238 | time: 0.209
+LM           | loss: 0.009588 | time: 1.024
+LMB          | loss: 0.009589 | time: 0.748
+LBFGS        | loss: 0.009640 | time: 0.209
+-------------------------------------------
+--- Architecture: [1, 8, 1] --------------
+GD           | loss: 0.110116 | time: 0.402
+Adam         | loss: 0.009651 | time: 0.349
+LM           | loss: 0.009631 | time: 2.715
+LMB          | loss: 0.009597 | time: 1.677
+LBFGS        | loss: 0.009620 | time: 0.148
+-------------------------------------------
+--- Architecture: [1, 16, 1] --------------
+GD           | loss: 0.153274 | time: 0.486
+Adam         | loss: 0.009646 | time: 0.502
+LM           | loss: 0.009496 | time: 7.949
+LMB          | loss: 0.009413 | time: 4.798
+LBFGS        | loss: 0.009654 | time: 0.308
+-------------------------------------------
+--- Architecture: [1, 32, 1] --------------
+GD           | loss: 0.172460 | time: 0.906
+Adam         | loss: 0.010476 | time: 0.931
+LM           | loss: 0.009262 | time: 27.382
+LMB          | loss: 0.009294 | time: 16.330
+LBFGS        | loss: 0.009656 | time: 0.438
+-------------------------------------------
+--- Architecture: [1, 64, 1] --------------
+GD           | loss: 0.191719 | time: 1.655
+Adam         | loss: 0.009824 | time: 1.739
+LM           | loss: 0.009267 | time: 104.509
+LMB          | loss: 0.009276 | time: 68.388
+LBFGS        | loss: 0.009627 | time: 1.333
+-------------------------------------------
+
+====== Dataset size: 5000 samples ==========
+--- Architecture: [1, 4, 1] --------------
+GD           | loss: 0.115965 | time: 0.697
+Adam         | loss: 0.024695 | time: 0.709
+LM           | loss: 0.009679 | time: 3.980
+LMB          | loss: 0.009677 | time: 2.926
+LBFGS        | loss: 0.009705 | time: 0.157
+-------------------------------------------
+--- Architecture: [1, 8, 1] --------------
+GD           | loss: 0.108717 | time: 1.229
+Adam         | loss: 0.009695 | time: 1.261
+LM           | loss: 0.009679 | time: 11.225
+LMB          | loss: 0.009676 | time: 9.438
+LBFGS        | loss: 0.009683 | time: 0.723
+-------------------------------------------
+--- Architecture: [1, 16, 1] --------------
+GD           | loss: 0.151791 | time: 2.334
+Adam         | loss: 0.010849 | time: 2.293
+LM           | loss: 0.009667 | time: 39.242
+LMB          | loss: 0.009668 | time: 24.187
+LBFGS        | loss: 0.009688 | time: 1.602
+-------------------------------------------
+--- Architecture: [1, 32, 1] --------------
+GD           | loss: 0.170947 | time: 6.299
+Adam         | loss: 0.010685 | time: 6.566
+LM           | loss: 0.009659 | time: 200.357
+LMB          | loss: 0.009664 | time: 118.551
+LBFGS        | loss: 0.009701 | time: 4.840
+-------------------------------------------
+--- Architecture: [1, 64, 1] --------------
+GD           | loss: 0.190074 | time: 12.178
+Adam         | loss: 0.009968 | time: 12.233
+LM           | loss: 0.009657 | time: 743.746
+LMB          | loss: 0.009659 | time: 524.834
+LBFGS        | loss: 0.009701 | time: 8.326
+-------------------------------------------

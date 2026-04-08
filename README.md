@@ -203,7 +203,7 @@ nn-optimizer-benchmark/
 │   └── analysis.ipynb      # Visualizations and analysis
 └── results/
     ├── figures/            # Saved plots
-    └── data/               # Saved experiment results (JSON, CSV) ( future update )
+    └── data/               # Saved experiment results 
 ```
 
 ---

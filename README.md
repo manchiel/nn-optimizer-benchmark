@@ -129,13 +129,13 @@ LM and LM-Broyden converge to lower loss in fewer epochs than Adam and GD on the
 
 ![Heatmap accuracy](results/figures/heatmap_loss.png)
 
-**LM dominates accuracy across almost all configurations.** Second-order methods consistently outperform first-order methods in final precision on small networks.
+**LM dominates accuracy across almost all configurations.** Second-order methods consistently outperform first-order methods in final precision on small networks.LM-Broyden occupies most remaining cells — faster than LM-exact while maintaining competitive accuracy.
 
 ### Speed heatmap — who is fastest?
 
 ![Heatmap speed](results/figures/heatmap_time.png)
 
-**GD and L-BFGS dominate runtime.** GD because of its trivial per-step cost, L-BFGS because of scipy's highly optimized C implementation. LM-Broyden occupies most remaining cells — faster than LM-exact while maintaining competitive accuracy.
+**GD and L-BFGS dominate runtime.** GD because of its trivial per-step cost, L-BFGS because of scipy's highly optimized C implementation. 
 
 ### Runtime scaling with network width
 

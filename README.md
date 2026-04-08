@@ -129,7 +129,11 @@ LM and LM-Broyden converge to lower loss in fewer epochs than Adam and GD on the
 
 ![Heatmap accuracy](results/figures/heatmap_loss.png)
 
-**LM dominates accuracy across almost all configurations.** Second-order methods consistently outperform first-order methods in final precision on small networks.LM-Broyden occupies most remaining cells — faster than LM-exact while maintaining competitive accuracy.
+**LM dominates accuracy on wider networks ([1,16,1], [1,32,1], [1,64,1]) 
+across all dataset sizes.** On the smallest network ([1,8,1]), LM-Broyden 
+surprisingly outperforms LM-exact in most configurations. One exception: 
+L-BFGS wins on [1,8,1] with 500 samples.
+
 
 ### Speed heatmap — who is fastest?
 

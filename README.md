@@ -121,25 +121,25 @@ These are reported separately because they tell different stories. An algorithm 
 
 ### Loss curves — validation experiment
 
-![Loss curves](results/figures/loss_curves_small.png)
+![Loss curves](results/figures/loss_curves.png)
 
 LM and LM-Broyden converge to lower loss in fewer epochs than Adam and GD on the small network. L-BFGS achieves competitive accuracy with the fewest iterations.
 
 ### Accuracy heatmap — who achieves lowest final loss?
 
-![Heatmap accuracy](results/figures/heatmap_best_loss_optimizer.png)
+![Heatmap accuracy](results/figures/heatmap_loss.png)
 
 **LM dominates accuracy across almost all configurations.** Second-order methods consistently outperform first-order methods in final precision on small networks.
 
 ### Speed heatmap — who is fastest?
 
-![Heatmap speed](results/figures/heatmap_fastest_optimizer.png)
+![Heatmap speed](results/figures/heatmap_time.png)
 
 **GD and L-BFGS dominate runtime.** GD because of its trivial per-step cost, L-BFGS because of scipy's highly optimized C implementation. LM-Broyden occupies most remaining cells — faster than LM-exact while maintaining competitive accuracy.
 
 ### Runtime scaling with network width
 
-![Runtime scaling](results/figures/runtime_scaling_dataset500.png)
+![Runtime scaling](results/figures/convergence_speed.png)
 
 LM and LM-Broyden scale poorly with network width — their runtime grows rapidly as `n_params` increases. Adam and GD remain nearly flat. The crossover point where LM-Broyden becomes slower than Adam occurs around width 32 (97 parameters).
 
@@ -203,7 +203,7 @@ nn-optimizer-benchmark/
 │   └── analysis.ipynb      # Visualizations and analysis
 └── results/
     ├── figures/            # Saved plots
-    └── data/               # Saved experiment results (JSON, CSV)
+    └── data/               # Saved experiment results (JSON, CSV) ( future update )
 ```
 
 ---
@@ -211,7 +211,7 @@ nn-optimizer-benchmark/
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/nn-optimizer-benchmark
+git clone https://github.com/manchiel/nn-optimizer-benchmark.git
 cd nn-optimizer-benchmark
 pip install -r requirements.txt
 ```

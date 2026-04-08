@@ -214,23 +214,5 @@ class LMBroyden:
             history.append(network.loss(x, y))
         return history
 
-    """
-    FAILED TRY TO GET JACOBIAN ANALYTICALLY 
-    
-    def _jacobian_fast(self, network, x):
-        params = network.get_params()
-        n_data = x.shape[0]
-        n_params = len(params)
-        J = np.zeros((n_data, n_params))
 
-        for i in range(n_data):
-            xi = x[i:i+1]
-            network.forward(xi)
-            delta = np.ones((1, network.layers[-1].b.shape[0]))
-            for layer in reversed(network.layers):
-                delta = layer.backward(delta)
-
-            J[i, :] = delta
-        return J
-        """
 

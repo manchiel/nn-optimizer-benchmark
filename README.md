@@ -137,11 +137,15 @@ LM and LM-Broyden converge to lower loss in fewer epochs than Adam and GD on the
 
 **GD and L-BFGS dominate runtime.** GD because of its trivial per-step cost, L-BFGS because of scipy's highly optimized C implementation. 
 
-### Runtime scaling with network width
+### Convergence speed — epochs to reach loss < ε
 
-![Runtime scaling](results/figures/convergence_speed.png)
+![Convergence speed](results/figures/convergence_speed.png)
 
-LM and LM-Broyden scale poorly with network width — their runtime grows rapidly as `n_params` increases. Adam and GD remain nearly flat. The crossover point where LM-Broyden becomes slower than Adam occurs around width 32 (97 parameters).
+For loose thresholds (ε=0.1, ε=0.05), LM and L-BFGS reach the target in 
+6–12 epochs while Adam needs 100+. At ε=0.01, only LM-Broyden reaches the 
+threshold within 200 epochs — GD and Adam never converge to this precision. 
+At ε=0.005, no algorithm reaches the threshold, confirming this is near the 
+limit of what a [1,8,1] network can achieve on this task.
 
 ### LM-Broyden vs. LM-exact trade-off
 

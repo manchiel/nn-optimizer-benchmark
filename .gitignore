@@ -1,0 +1,6 @@
+.idea/
+.venv/
+venv/
+*.pyc
+__pycache__/
+builder's_material/
